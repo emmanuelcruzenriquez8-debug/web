@@ -1,0 +1,667 @@
+﻿<html>
+<head>
+<title>BIRRERIA EL BUEN ZASON </title>
+<body>
+
+<linnk real="stylesheet" href="emmanuel.css">
+
+<!-- Anuncio superior -->
+<div style="background-color: #f1f1f1; padding: 10px; text-align: center;">
+   
+</div>
+
+<!-- Anuncio en movimiento abajo -->
+<marquee style="background-color: yellow; color: black; padding: 10px;" behavior="scroll" direction="left" scrollamount="10">
+¡GRAN OFERTA DE APERTURA! 50% DE DESCUENTO EN TODOS LOS PRODUCTOS
+</marquee>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Birriería Premium</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<br><br>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<!-- Anuncio en movimiento abajo -->
+<marquee style="background-color: yellow; color: black; padding: 10px;" behavior="scroll" direction="left" scrollamount="10">
+¡GRAN OFERTA DE APERTURA! 50% DE DESCUENTO EN TODOS LOS PRODUCTOS
+</marquee>
+
+  <style>
+
+    :root{
+      --bg:#f5f3ef;
+      --card:#ffffff;
+      --text:#1f1f1f;
+      --muted:#7a7a7a;
+      --border:#e5e5e5;
+      --primary:#3a3a3a;
+      --accent:#8b6f47;
+      --shadow:0 10px 30px rgba(0,0,0,.08);
+      --radius:22px;
+    }
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Poppins', sans-serif;
+    }
+
+    body{
+      background:var(--bg);
+      color:var(--text);
+    }
+
+    /* NAVBAR */
+
+    nav{
+      width:100%;
+      padding:20px 8%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      position:fixed;
+      top:0;
+      backdrop-filter:blur(15px);
+      background:rgba(245,243,239,.8);
+      border-bottom:1px solid var(--border);
+      z-index:1000;
+    }
+
+    .logo{
+      font-size:28px;
+      font-weight:700;
+      color:var(--primary);
+      letter-spacing:1px;
+    }
+
+    .nav-links{
+      display:flex;
+      gap:30px;
+    }
+
+    .nav-links a{
+      text-decoration:none;
+      color:var(--text);
+      font-weight:500;
+      transition:.3s;
+    }
+
+    .nav-links a:hover{
+      color:var(--accent);
+    }
+
+    /* HERO */
+
+    .hero{
+      min-height:100vh;
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      align-items:center;
+      padding:120px 8% 50px;
+      gap:40px;
+    }
+
+    .hero-text h1{
+      font-size:65px;
+      line-height:1.1;
+      margin-bottom:20px;
+      color:var(--primary);
+    }
+
+    .hero-text p{
+      color:var(--muted);
+      font-size:18px;
+      margin-bottom:35px;
+      line-height:1.7;
+    }
+
+    .hero-btn{
+      background:var(--primary);
+      color:white;
+      border:none;
+      padding:16px 28px;
+      border-radius:14px;
+      font-size:16px;
+      cursor:pointer;
+      transition:.3s;
+    }
+
+    .hero-btn:hover{
+      transform:translateY(-3px);
+      background:var(--accent);
+    }
+
+    .hero-image img{
+      width:100%;
+      border-radius:30px;
+      object-fit:cover;
+      box-shadow:var(--shadow);
+    }
+
+ 
+    .section-title{
+      text-align:center;
+      margin-bottom:50px;
+    }
+
+    .section-title h2{
+      font-size:40px;
+      margin-bottom:10px;
+    }
+
+    .section-title p{
+      color:var(--muted);
+    }
+
+    /* PRODUCTOS */
+
+    .productos{
+      padding:80px 8%;
+    }
+
+    .productos-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:30px;
+    }
+
+    .card{
+      background:var(--card);
+      border-radius:var(--radius);
+      overflow:hidden;
+      box-shadow:var(--shadow);
+      transition:.4s;
+      border:1px solid var(--border);
+    }
+
+    .card:hover{
+      transform:translateY(-8px);
+    }
+
+    .card img{
+      width:100%;
+      height:230px;
+      object-fit:cover;
+    }
+
+    .card-content{
+      padding:24px;
+    }
+
+    .card-content h3{
+      margin-bottom:10px;
+      font-size:24px;
+    }
+
+    .card-content p{
+      color:var(--muted);
+      margin-bottom:18px;
+      line-height:1.6;
+    }
+
+    .card-bottom{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+
+    .price{
+      font-size:22px;
+      font-weight:700;
+      color:var(--accent);
+    }
+
+    .btn-add{
+      background:var(--primary);
+      color:white;
+      border:none;
+      padding:12px 18px;
+      border-radius:12px;
+      cursor:pointer;
+      transition:.3s;
+    }
+
+    .btn-add:hover{
+      background:var(--accent);
+    }
+
+    /* CARRITO */
+
+    .cart{
+      position:fixed;
+      right:15px;
+      bottom:15px;
+      width:300px;
+      background:white;
+      border-radius:15px;
+      padding:15px;
+      box-shadow:0 10px 50px rgba(0,0,0,.15);
+      z-index:99;
+      border:1px solid var(--border);
+    }
+
+    .cart h3{
+      margin-bottom:20px;
+      font-size:24px;
+    }
+
+    .cart-items{
+      max-height:240px;
+      overflow-y:auto;
+      margin-bottom:20px;
+    }
+
+    .cart-item{
+      display:flex;
+      justify-content:space-between;
+      margin-bottom:12px;
+      padding-bottom:12px;
+      border-bottom:1px solid var(--border);
+      font-size:15px;
+    }
+
+    .cart-total{
+      display:flex;
+      justify-content:space-between;
+      font-size:22px;
+      font-weight:700;
+      margin-bottom:20px;
+    }
+
+    .whatsapp-btn{
+      width:100%;
+      border:none;
+      padding:16px;
+      background:#25D366;
+      color:white;
+      border-radius:14px;
+      font-size:16px;
+      cursor:pointer;
+      transition:.3s;
+    }
+
+    .whatsapp-btn:hover{
+      transform:scale(1.02);
+    }
+
+    /* FOOTER */
+
+    footer{
+      text-align:center;
+      padding:40px;
+      color:var(--muted);
+    }
+
+    /* RESPONSIVE */
+
+    @media(max-width:900px){
+
+      .hero{
+        grid-template-columns:1fr;
+      }
+
+      .hero-text h1{
+        font-size:48px;
+      }
+
+      .cart{
+        width:90%;
+        right:5%;
+      }
+
+      .nav-links{
+        display:none;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- NAV -->
+
+  <nav>
+
+    <div class="logo">
+      Birriería el buen sazon 
+    </div>
+
+    <div class="nav-links">
+      <a href="..//paginas_web_empresa_birreria/marketing.html">Marketing</a>
+ <a href="..//paginas_web_empresa_birreria/finanzas.html">finanzas</a>
+
+<a href="..//paginas_web_empresa_birreria/pruduccion.html">produccion</a>
+      <a href="..//paginas_web_empresa_birreria/recursoshumanos.html">Recursos Humanos</a>
+ <a href="..//paginas_web_empresa_birreria/areas.html">Areas</a></p>
+    </div>
+
+  </nav>
+
+  <!-- HERO -->
+
+  <section class="hero">
+
+    <div class="hero-text">
+
+      <h1>
+        Sabor auténtico<br>
+        de birria el buen sazon 
+      </h1>
+
+      <p>
+        Disfruta tacos, quesabirrias y consomé preparados con ingredientes frescos y una receta tradicional que hace única nuestra birria.
+      </p>
+
+      <button class="hero-btn">
+        <a href="..//paginas_web_empresa_birreria/menus89000.html">ver menú</a>
+      </button>
+
+    </div>
+
+    <div class="hero-image">
+
+      <img src="https://images.unsplash.com/photo-1613514785940-daed07799d9b?q=80&w=1200&auto=format&fit=crop">
+
+    </div>
+
+  </section>
+
+  <!-- PRODUCTOS -->
+
+  <section class="productos">
+
+    <div class="section-title">
+      <h2>Nuestro Menú</h2>
+      <p>Selecciona tus productos favoritos</p>
+    </div>
+
+    <div class="productos-grid">
+
+      <!-- PRODUCTO 1 -->
+
+      <div class="card">
+
+        <img src="..//paginas_web_empresa_birreria\imagenes_pagina/tacos.jfif">
+
+        <div class="card-content">
+
+          <h3>Tacos de Birria</h3>
+
+          <p>
+            Tortilla dorada con carne suave y consomé tradicional.
+          </p>
+
+          <div class="card-bottom">
+
+            <span class="price">
+              $45
+            </span>
+
+            <button class="btn-add"
+              onclick="agregarCarrito('Tacos de Birria',45)">
+              Agregar
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- PRODUCTO 2 -->
+
+      <div class="card">
+
+        <img src="..//paginas_web_empresa_birreria\imagenes_pagina/quesabirria.jfif">
+
+        <div class="card-content">
+
+          <h3>Quesabirria</h3>
+
+          <p>
+            Queso derretido y birria premium en tortilla crujiente.
+          </p>
+
+          <div class="card-bottom">
+
+            <span class="price">
+              $60
+            </span>
+
+            <button class="btn-add"
+              onclick="agregarCarrito('Quesabirria',60)">
+              Agregar
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- PRODUCTO 3 -->
+
+      <div class="card">
+
+        <img src="..//paginas_web_empresa_birreria\imagenes_pagina/consome.jfif">
+
+        <div class="card-content">
+
+          <h3>Consomé</h3>
+
+          <p>
+            Caldo caliente preparado lentamente con especias tradicionales.
+          </p>
+
+          <div class="card-bottom">
+
+            <span class="price">
+              $35
+            </span>
+
+            <button class="btn-add"
+              onclick="agregarCarrito('Consomé',35)">
+              Agregar
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- PRODUCTO 4 -->
+
+      <div class="card">
+
+        <img src="..//paginas_web_empresa_birreria\imagenes_pagina/birria_kilo.jfif">
+
+        <div class="card-content">
+
+          <h3>Birria por Kilo</h3>
+
+          <p>
+            Perfecta para compartir con familia o reuniones especiales.
+          </p>
+
+          <div class="card-bottom">
+
+            <span class="price">
+              $380
+            </span>
+
+            <button class="btn-add"
+              onclick="agregarCarrito('Birria por Kilo',380)">
+              Agregar
+            </button>
+
+
+
+
+
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+  </section>
+
+  <!-- CARRITO -->
+
+  <div class="cart">
+
+    <h3>
+      🛒 Tu pedido
+    </h3>
+
+    <div class="cart-items" id="cartItems">
+
+    </div>
+
+    <div class="cart-total">
+      <span>Total</span>
+      <span>$<span id="total">0</span></span>
+    </div>
+
+    <button class="whatsapp-btn"
+      onclick="enviarWhatsApp()">
+
+      Finalizar pedido por WhatsApp
+
+    </button>
+
+  </div>
+
+ 
+
+  <script>
+
+    let carrito = [];
+    let total = 0;
+
+    function agregarCarrito(nombre, precio){
+
+      carrito.push({
+        nombre,
+        precio
+      });
+
+      total += precio;
+
+      actualizarCarrito();
+    }
+
+    function actualizarCarrito(){
+
+      const cartItems = document.getElementById("cartItems");
+
+      cartItems.innerHTML = "";
+
+      carrito.forEach(item => {
+
+        cartItems.innerHTML += `
+          <div class="cart-item">
+            <span>${item.nombre}</span>
+            <span>$${item.precio}</span>
+          </div>
+        `;
+
+      });
+
+      document.getElementById("total").innerText = total;
+
+    }
+
+    function enviarWhatsApp(){
+
+      if(carrito.length === 0){
+
+        alert("Tu carrito está vacío");
+        return;
+
+      }
+
+      let mensaje =
+      "Hola, quiero realizar este pedido:%0A%0A";
+
+      carrito.forEach(item => {
+
+        mensaje += `• ${item.nombre} - $${item.precio} MXN%0A`;
+
+      });
+
+      mensaje += `%0A🧾 Total: $${total} MXN`;
+
+            const telefono = "6122348144";
+
+      const url =
+      `https://wa.me/${telefono}?text=${mensaje}`;
+
+      window.open(url, "_blank");
+
+    }
+
+  </script>
+
+
+<footer>
+    <hr>
+
+    <center>
+        <h3>Birriería El Sabor</h3>
+    </center>
+
+    <table width="100%">
+        <tr>
+            <td>
+                <p><a href="..//paginas_web_empresa_birreria/responsalidad.html">Responsabilidad Social</a></p>
+ <p><a href="..//paginas_web_empresa_birreria/facturacion2.html">facturación</a></p>
+                            </td>
+gg
+            <td>
+                <p><a href="..//paginas_web_empresa_birreria/terminos.html">Términos y Condiciones</a></p>
+                <p><a href="..//paginas_web_empresa_birreria/privacidad.html">privacidad</a></p>
+               
+            </td>
+0
+            <td align="center">
+                            <a href="https://www.instagram.com/birreriaelbuensazon?igsh=MWFxNzlsbmxvOWZzcQ==">Instagram</a><br><br>
+                <a href="https://www.tiktok.com/@birreriaelbuensazon?_r=1&_t=ZS-978cUYurLuK">TikTok</a><br><br>
+           
+            </td>
+        </tr>
+    </table>
+
+    <br>
+
+    <center>
+        <p>
+            Birriería El Sabor no realiza promociones mediante sitios de terceros,
+            por lo que no se hace responsable del contenido promocional publicado fuera
+            de sus canales oficiales.
+        </p>
+
+        <p>
+            © 2026 Birriería El Sabor. Todos los derechos reservados.
+        </p>
+    </center>
+
+</footer>
+
+
+</body>
+</html>

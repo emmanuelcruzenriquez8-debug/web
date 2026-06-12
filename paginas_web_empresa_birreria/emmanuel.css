@@ -1,0 +1,54 @@
+.mision-vision{
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px;
+}
+
+.mision-vision h2{
+    font-size: 38px;
+    color: #1f4e79;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-family: Georgia, serif;
+}
+
+.mision-vision p{
+    font-size: 40px;
+    line-height: 1.9;
+    text-align: justify;
+    margin-bottom: 20px;
+    font-family: Georgia, serif;
+}
+.contenedor-productos{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.producto{
+    width: 260px;
+}
+
+
+.terminos-condiciones{
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px;
+}
+
+.terminos-condiciones h2{
+    font-size: 40px;
+    color: #1f4e79;
+    margin-bottom: 25px;
+}
+
+.terminos-condiciones h3{
+    font-size: 28px;
+    margin-top: 25px;
+}
+
+.terminos-condiciones p{
+    font-size: 22px;
+    text-align: justify;
+    line-height: 1.8;
+}

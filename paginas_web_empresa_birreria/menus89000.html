@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Birriería Emmanuel | Menú Premium</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  background:#111111;
+  color:white;
+  overflow-x:hidden;
+}
+
+/* HERO */
+
+.hero{
+  min-height:100vh;
+  background:
+  linear-gradient(to bottom,
+  rgba(0,0,0,.7),
+  rgba(0,0,0,.85)),
+  url('https://images.unsplash.com/photo-1613514785940-daed07799d9b?q=80&w=1800&auto=format&fit=crop');
+
+  background-size:cover;
+  background-position:center;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding:40px;
+}
+
+.hero-content{
+  max-width:900px;
+}
+
+.hero-content span{
+  color:#d4a762;
+  font-size:18px;
+  letter-spacing:4px;
+  text-transform:uppercase;
+}
+
+.hero-content h1{
+  font-size:90px;
+  line-height:1;
+  margin:25px 0;
+  font-weight:800;
+}
+
+.hero-content p{
+  color:#d1d1d1;
+  font-size:20px;
+  line-height:1.8;
+}
+
+/* SECTION */
+
+.section{
+  padding:110px 8%;
+}
+
+.section-title{
+  text-align:center;
+  margin-bottom:70px;
+}
+
+.section-title span{
+  color:#d4a762;
+  letter-spacing:3px;
+  text-transform:uppercase;
+  font-size:14px;
+}
+
+.section-title h2{
+  font-size:55px;
+  margin-top:15px;
+}
+
+/* GRID */
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+  gap:35px;
+}
+
+/* CARD */
+
+.card{
+  background:#1b1b1b;
+  border-radius:30px;
+  overflow:hidden;
+  transition:.5s;
+  border:1px solid rgba(255,255,255,.06);
+  position:relative;
+}
+
+.card:hover{
+  transform:translateY(-10px);
+  box-shadow:0 25px 50px rgba(0,0,0,.45);
+}
+
+.card img{
+  width:100%;
+  height:250px;
+  object-fit:cover;
+}
+
+.card-content{
+  padding:30px;
+}
+
+.card-content h3{
+  font-size:30px;
+  margin-bottom:12px;
+}
+
+.card-content p{
+  color:#b7b7b7;
+  line-height:1.9;
+  font-size:15px;
+}
+
+/* COMBOS */
+
+.combo::before{
+  content:"Especial";
+  position:absolute;
+  top:20px;
+  right:20px;
+  background:#d4a762;
+  color:black;
+  padding:8px 18px;
+  border-radius:40px;
+  font-size:13px;
+  font-weight:700;
+}
+
+/* FOOTER */
+
+.footer{
+  text-align:center;
+  padding:50px 20px;
+  border-top:1px solid rgba(255,255,255,.06);
+  color:#9c9c9c;
+  background:#0d0d0d;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+  .hero-content h1{
+    font-size:55px;
+  }
+
+  .section-title h2{
+    font-size:38px;
+  }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+
+<section class="hero">
+
+  <div class="hero-content">
+
+    <span>Birriería Premium</span>
+
+    <h1>
+      Birriería el buen <br>
+      sazon 
+    </h1>
+
+    <p>
+      Auténtico sabor mexicano preparado lentamente,
+      con recetas tradicionales y la mejor experiencia
+      para amantes de la birria.
+    </p>
+
+  </div>
+
+</section>
+
+<!-- MENÚ -->
+
+<section class="section">
+
+  <div class="section-title">
+
+    <span>Nuestro Menú</span>
+
+    <h2>Especialidades</h2>
+
+  </div>
+
+  <div class="grid">
+
+    <!-- TACO -->
+
+    <div class="card">
+
+      <img src="..//paginas_web_empresa_birreria\imagenes_pagina/tacos.jfif">
+
+      <div class="card-content">
+
+        <h3>Taco de Birria</h3>
+
+        <p>
+          Tortilla dorada rellena de birria suave y jugosa,
+          acompañada de salsa especial y limón fresco.
+        </p>
+
+      </div>
+
+    </div>
+
+    <!-- QUESABIRRIA -->
+
+    <div class="card">
+
+      <img src="..//paginas_web_empresa_birreria\imagenes_pagina/quesabirria.jfif">
+
+      <div class="card-content">
+
+        <h3>Quesabirria</h3>
+
+        <p>
+          La combinación perfecta entre queso gratinado
+          y birria premium preparada al estilo tradicional.
+        </p>
+
+      </div>
+
+    </div>
+
+    <!-- PLATO -->
+
+    <div class="card">
+
+      <img src="..//paginas_web_empresa_birreria\imagenes_pagina/platobirria.jfif">
+
+      <div class="card-content">
+
+        <h3>Plato Grande</h3>
+
+        <p>
+          Generosa porción de birria acompañada de tortillas,
+          cebolla, cilantro y consomé caliente.
+        </p>
+
+      </div>
+
+    </div>
+    <!-- MEDIA -->
+
+    <div class="card">
+
+      <img src="..//paginas_web_empresa_birreria\imagenes_pagina/birriamedio.jfif">
+
+      <div class="card-content">
+
+        <h3>1/2 de Birria</h3>
+
+        <p>
+          Ideal para compartir, preparada lentamente
+          con ingredientes frescos y sabor auténtico.
+        </p>
+
+      </div>
+
+    </div>
+
+    <!-- LITRO -->
+
+    <div class="card">
+
+      <img src="..//paginas_web_empresa_birreria\imagenes_pagina/birrialitro.jfif">
+
+      <div class="card-content">
+
+        <h3>1L de Birria</h3>
+
+        <p>
+          Litro completo de birria premium acompañado
+          de tortillas recién hechas y complementos.
+        </p>
+
+      </div>
+
+    </div>
+
+    <!-- BURRITO -->
+
+    <div class="card">
+
+      <img src="..//paginas_web_empresa_birreria\imagenes_pagina/tacos.jfif">
+
+      <div class="card-content">
+
+        <h3>Burrito de Birria</h3>
+
+        <p>
+          Tortilla grande rellena de birria jugosa,
+          queso derretido y sabores irresistibles.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- COMBOS -->
+
+<section class="section" style="background:#181818;">
+
+  <div class="section-title">
+
+    <span>Favoritos</span>
+
+    <h2>Combos Especiales</h2>
+
+  </div>
+
+  <div class="grid">
+
+    <!-- COMBO 1 -->
+
+    <div class="card combo">
+
+      <img src="..//paginas_web_empresa_birreria\imagenes_pagina/combo1.jfif">
+
+      <div class="card-content">
+
+        <h3>Combo Taco Lovers</h3>
+
+        <p>
+          3 tacos de birria acompañados de consomé
+          caliente y bebida refrescante.
+        </p>
+
+      </div>
+
+    </div>
+
+    <!-- COMBO 2 -->
+
+    <div class="card combo">
+
+      <img src="..//paginas_web_empresa_birreria\imagenes_pagina/combo2.jfif">
+
+      <div class="card-content">
+
+        <h3>Combo Quesabirria</h3>
+
+        <p>
+          Doble quesabirria con bebida fresca
+          y consomé especial de la casa.
+        </p>
+
+      </div>
+
+    </div>
+
+    <!-- COMBO 3 -->
+
+    <div class="card combo">
+
+      <img src="..//paginas_web_empresa_birreria\imagenes_pagina/combo3.jfif">
+
+      <div class="card-content">
+
+        <h3>Combo Familiar</h3>
+
+        <p>
+          1 litro de birria acompañado de bebidas,
+          tortillas y complementos para compartir.
+        </p>
+
+      </div>
+
+    </div>
+
+    <!-- COMBO 4 -->
+
+    <div class="card combo">
+
+      <img src="..//paginas_web_empresa_birreria\imagenes_pagina/combo4.jfif">
+
+      <div class="card-content">
+
+        <h3>Combo Burrito Supreme</h3>
+
+        <p>
+          Burrito de birria acompañado de bebida
+          y consomé premium recién preparado.
+        </p>
+
+      </div>
+
+    </div>
+
+    <!-- COMBO 5 -->
+
+    <div class="card combo">
+
+      <img src="..//paginas_web_empresa_birreria\imagenes_pagina/combo5.jfif">
+
+      <div class="card-content">
+
+        <h3>Combo Tradicional</h3>
+
+        <p>
+          Plato grande con cerveza fría y
+          consomé especial al estilo tradicional.
+        </p>
+
+      </div>
+
+    </div>
+
+    <!-- COMBO 6 -->
+
+    <div class="card combo">
+
+      <img src="..//paginas_web_empresa_birreria\imagenes_pagina/combo6.jfif">
+
+      <div class="card-content">
+
+        <h3>Combo Supremo</h3>
+
+        <p>
+          Plato grande acompañado de taco extra,
+          bebida fresca y consomé caliente.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer class="footer">
+
+  © 2026 Birriería El Buen Sazon • Menú Premium
+
+</footer>
+
+</body>
+</html>
